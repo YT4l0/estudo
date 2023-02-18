@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+int main()
+{
+
+    int Num1, Num2, soma, subtr, mult, div;
+
+    int i = 0;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &Num1);
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &Num2);
+    printf("Soma digite 1\nsubtracao digite 2\nmultiplicacao digite 3\ndivisao digite 4\n");
+    printf(" Qual operacao deseja efetuar ? \n\n");
+    scanf("%d", &i);
+
+    if (i == 0)
+    {
+        Beep(1000, 500);
+        printf("operacao invalida");
+    }
+
+    if (i >= 5)
+    {
+        Beep(1000, 500);
+        printf("operacao invalida");
+    }
+    if (i == 1)
+    {
+        Beep(1000, 500);
+
+        soma = Num1 + Num2;
+        printf(" A soma de %d + %d =  %d\n", Num1, Num2, soma);
+    }
+    if (i == 2)
+    {
+        subtr = Num1 - Num2;
+        printf(" A subtr de %d - %d = %d\n", Num1, Num2, subtr);
+    }
+    if (i == 3)
+    {
+
+        Beep(1000, 500);
+
+        mult = Num1 * Num2;
+        printf(" A multipicacao de %d * %d = %d\n", Num1, Num2, mult);
+    }
+    if (i == 4)
+    {
+        Beep(1000, 500);
+        div = Num1 / Num2;
+        printf("A divisao de %d / %d = %d\n", Num1, Num2, div);
+    }
+
+    return 0;
+}
